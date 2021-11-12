@@ -26,7 +26,7 @@ const app = new Vue({
       this.tasks.splice(index,1);
     },
     addTask(){
-      if (this.newTask.length < 3) {
+      if (this.newTask.text.length < 3) {
         this.error = true;
         setTimeout(() => {
           this.error = false;
