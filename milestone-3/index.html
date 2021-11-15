@@ -24,7 +24,7 @@
         >Inserisci un testo lungo <strong>almeno 3</strong> caratteri</p>
         <input 
         @keyup.enter="addTask"
-        v-model="newTask.text"
+        v-model.trim="newTask.text"
         type="text" placeholder="Aggiungi task">
         <button
         @click="addTask"
